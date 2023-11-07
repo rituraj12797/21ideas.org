@@ -12,6 +12,9 @@
       <div class="book-menu-content">
         {{ template "menu" . }} <!-- Left menu Content -->
       </div>
+      <div class="book-toc-content">
+        {{ template "toc" . }} <!-- Table of Contents -->
+      </div>
     </aside>
 
     <div class="book-page">
@@ -34,11 +37,7 @@
     </div>
 
     {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        {{ template "toc" . }} <!-- Table of Contents -->
-      </div>
-    </aside>
+    
     {{ end }}
   </main>
 

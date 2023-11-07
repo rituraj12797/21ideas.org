@@ -9,3 +9,22 @@
     margin: 0;
     max-width: none;
 }
+.book-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.book-toc-content{
+    color: orange;
+    position: fixed;
+    
+    bottom: 10vh;
+    left: 0vw;
+}
+#TableOfContents>ul>li>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
